@@ -16,27 +16,28 @@ using OpenQA.Selenium.Remote;
 
 namespace YoutubeAtata.Utilities
 {
-    public class Youtube_Utilities
+    public class WebDriverSingleton
     {
-        private static IWebDriver Driver;
 
-        public static IWebDriver driver
+        public static IWebDriver driver;
+
+        public static IWebDriver getInstance()
         {
-            get
+            if (driver == null)
             {
-                if (Driver == null)
-                {
-                    var options = new ChromeOptions();
-                    options.AddArgument("incognito");
-                    var Driver = new ChromeDriver(options);
-                }
-                return Driver;
+                var options = new ChromeOptions();
+                options.AddArgument("incognito");
+                //var Instance = new ChromeDriver(options);
+                driver = new ChromeDriver(options);
             }
+            return driver;
         }
 
-
+    }
+    public class Youtube_Utilities
+    {
         //IWebDriver driver = new ChromeDriver(Ops);
-
+        IWebDriver driver = WebDriverSingleton.getInstance();
         //chromeOptions.AddArgument("incognito");
         //IWebDriver driver = new ChromeDriver(ChromeOptions.AddArgument("incognito"));
         public void OpenYoutubeURL(string URL)
