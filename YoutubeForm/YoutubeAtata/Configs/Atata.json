@@ -1,0 +1,24 @@
+{
+  "drivers": [
+    {
+      "type": "chrome",
+      "options": {
+        "arguments": [ "--headless", "--disable-gpu", "--window-size=1920,1200" ]
+        //"arguments": [ "--start-maximized" ]
+      },
+
+      "service": {
+        "driverPath": "D:\\nbescreentest\\Pixelz-UITests\\Pixelz-NBETests\\"
+      }
+    }
+  ],
+
+  "useNUnitTestName": true,
+  "logNUnitError": true,
+  "takeScreenshotOnNUnitError": true,
+  "retryTimeout": 60,
+  "baseUrl": "https://rtbnewbackend-staging.pxzhunter.com",
+
+  "screenShotFileOutput": "D:\\log\\Screenshot",
+  "rtbConnectionString": "Data Source=34.196.146.103;Initial Catalog=RemoveBackground;Persist Security Info=True;User ID=RemoveTheBackgroundWebsiteWrite;Password=hrfyjr4#23/g88;MultipleActiveResultSets=true"
+}

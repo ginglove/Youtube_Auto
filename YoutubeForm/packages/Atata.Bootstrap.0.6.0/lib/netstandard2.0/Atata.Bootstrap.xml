@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Atata.Bootstrap</name>
+    </assembly>
+    <members>
+        <member name="T:Atata.Bootstrap.BSListGroupItem`1">
+            <summary>
+            Represents Bootstrap list group item control.
+            Default search finds the first occuring element with "list-group-item" class.
+            </summary>
+            <typeparam name="TOwner">The type of the owner page object.</typeparam>
+        </member>
+        <member name="T:Atata.Bootstrap.BSListGroup`1">
+            <summary>
+            Represents Bootstrap list group control.
+            Default search finds the first occuring element with "list-group" class.
+            </summary>
+            <typeparam name="TOwner">The type of the owner page object.</typeparam>
+            <seealso cref="T:Atata.Bootstrap.BSListGroupItem`1" />
+        </member>
+        <member name="T:Atata.Bootstrap.BSListGroup`2">
+            <summary>
+            Represents Bootstrap list group control.
+            Default search finds the first occuring element with "list-group" class.
+            </summary>
+            <typeparam name="TItem">The type of the list item control.</typeparam>
+            <typeparam name="TOwner">The type of the owner page object.</typeparam>
+            <seealso cref="T:Atata.Bootstrap.BSListGroupItem`1" />
+        </member>
+    </members>
+</doc>
